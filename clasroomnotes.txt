@@ -1,0 +1,202 @@
+Linux Commands:
+----------------------------
+20.  id:  IT displays the id value
+21.  id -u(to get the unique id of username)
+22.  id -g(to get the global id of the username)
+23.  cut -c1-2 math.txt
+24.  eval -help:  Execute arguments as a shell command.
+25.  history:  It shows the history of the executed command
+26.  history 5: it wil show the history of top 5 executed command
+26.  free:  It will show free spaces in KB
+27.  ssh slave-ip
+28.  ssh-keygen -t rsa: To generate the public and private ssh keey
+29.  ifcofig -a
+30.  ifcofig -s
+31.  ip link
+32.  nestat -a
+33.  nslookup google.com
+
+
+Mango   ngo   cut -c1-c2     MAng
+Banana  nana      Bana
+Orange            Oran
+Lemon                  
+
+I am reading
+You are playing
+
+Cut -c4-8 flower.txt
+
+Jira:
+-----
+Ticket managment tool:
+1  create the task-->Assign--->work--->close
+Jira-->Atlassinan
+
+
+Class notes and assignment for the day(May 29, 2023):
+
+-------------------------------------------------
+Work around:
+1. Get the files from remote to the local.
+2. Add new file to the local.
+3. Post that file to remote(gIT ui)
+4.  makes some changes--->ge tthe lastes file from the remote to local.
+5.  make some changes to local ---->post to remote ui.
+
+-------------------------------------------------
+LINUX:
+-----
+1.  Highly secured.
+2. multitasking.
+3.  Restarting is not required frequently.
+4.  No need of any anitvirus.
+5.  Open source.
+
+commands:
+--------
+undo is dere ot not?
+multiple file?
+
+LINUX:
+1. pwd:  Working directory
+2.  cd:  Change directory(go tthat directory)
+3.  mkdir:  make directory
+4.  rmdir:  remove directry(delete)
+5.  cp:  copy file
+6.  ls:  List
+7.  ls -l:  List with details
+8.  touch:  to create the file
+9.  gedit/vi:  to edit the file
+10.  clear:  to clear screen/cmdlines
+11.  mv:  To move to different location
+12. rm:  delete
+13.  cat: contains of the file
+14.  echo:  to display file/folder name/content on the screen
+15.  man:  help menu
+16.  whoami:  To display current users.
+17.  sudo:  To provide external permission after entering password of system
+18.  grep:  To highlightt the value of the file
+19.  Sort:  to make the content of folder in the sorting order.
+Class notes and Assignment for the day(June 1, 2023):
+
+Azure cloud:
+
+URL:  portal.azure.com
+Create account over there.
+Login
+Subscription.
+
+NareshIT
+
+Developer
+QA
+BA
+Devops
+Support
+
+www.flipkart.com
+
+App service-->FE
+Function app
+Azure SQL
+
+---------------------------------------------------
+APP services:
+
+1.  Create the app service.
+2.  Download the publish profile.
+3.  Try to edit with thelp of notepad++.
+4.  Open with any xml formatter.
+5.  You are ready with you credentials.
+6.  Download Winscp.
+7.  try to install.
+8.  loginwith credentials.
+9.  Download any html/code from freecss.com etc.
+10.  Try to push the code to the local.
+11.  Copy and paste to the root server.
+12.  Once copied and enjoy ur website.
+Service connection:
+
+1.  Project setting-->left hand panel-->Service connection.
+2.  New service connection.
+3.  Choose ARM(azure resource manager).
+4.  Choose Service connection Manual.
+5.  subscription id(Azure portal -->subscrition-->free)
+6.  subscription name
+7.  Service Principal Id(AAD-->App registration-->Add new registration-->Client ID.
+8.  Tenant ID.
+9.  LEft hand panel--->Certifacte and secrets--->cjhooose and create new-->values(copy)-->service principle key.
+10.  Free subscritpion-->IAM-->Contributor role->app registration name.
+11.  Verify your SC(succeeded)
+12.  Give SC name.
+13.  Give all grant persmission.
+
+Class notes and Assignment for the day(June 16, 2023):
+STORAGE:
+$connectTestResult = Test-NetConnection -ComputerName azure730amstorage1.file.core.windows.net -Port 445
+if ($connectTestResult.TcpTestSucceeded) {
+    # Save the password so the drive will persist on reboot
+    cmd.exe /C "cmdkey /add:`"azure730amstorage1.file.core.windows.net`" /user:`"localhost\azure730amstorage1`" /pass:`"Xyo3u3vT2GOPl1/f8gSGVFPCQq8kDx3J14O4Srq5ouSKdj0pP+sALNPkxbUSHMFq/W6k1MxHi1vA+AStPpsm4Q==`""
+    # Mount the drive
+    New-PSDrive -Name Z -PSProvider FileSystem -Root "\\azure730amstorage1.file.core.windows.net\navinfileshare1" -Persist
+} else {
+    Write-Error -Message "Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port."
+}
+
+
+Follow below:
+Folder:  PAste the root path.
+Username:localhost\azure730amstorage1
+pwd:Xyo3u3vT2GOPl1/f8gSGVFPCQq8kDx3J14O4Srq5ouSKdj0pP+sALNPkxbUSHMFq/W6k1MxHi1vA+AStPpsm4Q==
+
+
+Storage:
+-------
+It will always in small letter:
+
+Tier:
+**Hot:  Frequently used storage
+**Cool:  Rarely used
+**Optiomized:  Based on your needs/requirment
+
+Access:
+------
+Private
+Anonymous-container
+Anonymous-Blob.
+
+Types of Storages:
+1.  Container.
+2.  File share.
+3.  Queues.
+4.  Table
+
+
+Employee                
+    (Primary key)            
+Partition key    Row Key(EmpID)    Name    Designation    Salary
+Junior Scale    J01    Navin    Lead    10000
+    J02    Suresh    Lead    20000
+    J03            
+    J04            
+Middle Scale    M01    Rakesh    Softeare Engineer    8000
+    M02            
+    M03            
+Senior Scale    S01            
+    S02            
+    S03            
+    S04            
+
+
+Steps for Fiel shares:
+----------------------
+1.  Create the file share from storage browser.
+2.  Try to upload any file/folder.
+3.  Click on connect on left hand top.
+4.  Select driver(like z, c, d etc) and show script.
+5.  My computer/This pC--->Map network---->select drive.
+6.  Use root link-->as folder name.
+7.  User and pwd need to be entered.
+8.  Connect.
+9.  Try to view the file that has uploaded on Azure storage and vice versa.
